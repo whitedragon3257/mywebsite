@@ -32,7 +32,6 @@ header{ display: flex; }
 
 #menu{
     display: flex;
-    /*background-color: rgba(0, 0, 0, 0.473);*/
     background: transparent linear-gradient(180deg, #9201af9c 0%, transparent 100%) 0% 0% no-repeat padding-box;
     margin: 0%; padding: 0%;
     width: 100%;
