@@ -1,0 +1,26 @@
+/*Céu estrelado*/
+.sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;/* Cor das estrelas */
+    border-radius: 50%;
+    pointer-events: none; /* Evita que as estrelas sejam clicáveis */
+    animation: twinkling 3s infinite alternate; /* Adiciona a animação */
+}
+@keyframes twinkling {
+    0% {
+        opacity: 1; /* Estrela totalmente visível */
+    }
+    100% {
+        opacity: 0.5; /* Estrela mais fraca (piscando) */
+    }
+}
