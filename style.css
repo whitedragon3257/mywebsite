@@ -36,10 +36,19 @@ header{ display: flex; }
     margin: 0%; padding: 0%;
     width: 100%;
     align-items: center; justify-content: center; text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 140%;
 }
 
 #menu li{
     display: flex;
-    margin: 2%;
+    margin: 2%; padding: 0;
     list-style: none;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    background-color: red;
 }
