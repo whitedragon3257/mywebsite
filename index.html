@@ -21,15 +21,13 @@
                 background: transparent linear-gradient(170deg, #01af84 35%, black 100%) 0% 0% no-repeat padding-box;
             }
         </style>
-        <script>
-        </script>
         <div class="sky">
             <div class="moon"></div>
         </div>
-        <div class="message" id="message"></div>
         <script>
             const numStars = 1050; // Número de estrelas
-    
+            const message = document.querySelector('.message');
+
             for (let i = 0; i < numStars; i++) {
                 createStar();
             }
@@ -41,7 +39,13 @@
                 star.style.top = `${Math.random() * 100}%`;
                 document.body.appendChild(star);
             }
-            const message = document.querySelector('.message');
          </script>
+         <header>
+            <ul id="menu">
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+         </header>
     </body>
 </html>
