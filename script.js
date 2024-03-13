@@ -1,3 +1,4 @@
+alert("hello world");
 //<![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
 		(function () {
