@@ -2,36 +2,27 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
-        <style>
-            html, body{
-                height: 100%; width: 100%;
-                margin: 0; padding: 0;
-            }
-            body{
-                margin: 0; padding: 0;
-                background-color: black; color: white;
-                background: transparent linear-gradient(170deg, #01af84 35%, black 100%) 0% 0% no-repeat padding-box;
-            }
-        </style>
-        <div class="sky"></div>
+        <div class="sky"></div><!--Local onde é geradas as estrelas-->
         <header>
-            <ul id="menu">
-                <li onclick="Home()">Home</li>
-                <li onclick="Contact()">Contact</li>
+            <ul id="menu"> <!--Menu principal da pagina, contendo funcoes principais-->
+                <li onclick="goToHome()">Home</li>
+                <li onclick="openContact()">Contact</li>
                 <li>Projects</li>
             </ul>
         </header>
+        
         <script>
-            // Sky
-            const numStars = 1050; // Número de estrelas
-            const message = document.querySelector('.message');
-            for (let i = 0; i < numStars; i++) { createStar(); }
-            function createStar() {          
+            // Criando estrelas na div Sky
+            const numStars = 1050;                                        // Definido o numero de estrelas
+            for (let i = 0; i < numStars; i++) { generateRandomStar(); }  // Funcao de repeticao para gerar gerar estrelas até o numero definido
+            // Funcao que gera estrelas aleatoriamente no corpo da div
+            function generateRandomStar() {
                 const star = document.createElement("div");
 
                 star.classList.add("star");
@@ -40,9 +31,9 @@
                 document.body.appendChild(star);
             }
 
-            // Header
-            function Home(){window.open('./index.html');}
-            function Contact(){window.open('wa.me/5562993882350');}
+            // Funcoes relacionadas ao menu Header
+            function goToHome(){window.open('./index.html');}           // Abertura da pagina principal
+            function openContact(){window.open('wa.me/5562993882350');} // Abertura da API do WhatsApp 
         </script>
     </body>
 </html>
