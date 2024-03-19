@@ -16,24 +16,18 @@
                 <li>Projects</li>
             </ul>
         </header>
-        
-        <script>
-            // Criando estrelas na div Sky
-            const numStars = 1050;                                        // Definido o numero de estrelas
-            for (let i = 0; i < numStars; i++) { generateRandomStar(); }  // Funcao de repeticao para gerar gerar estrelas até o numero definido
-            // Funcao que gera estrelas aleatoriamente no corpo da div
-            function generateRandomStar() {
-                const star = document.createElement("div");
-
-                star.classList.add("star");
-                star.style.left = `${Math.random() * 100}%`;
-                star.style.top = `${Math.random() * 100}%`;
-                document.body.appendChild(star);
-            }
-
-            // Funcoes relacionadas ao menu Header
-            function goToHome(){window.open('./index.html');}           // Abertura da pagina principal
-            function openContact(){window.open('wa.me/5562993882350');} // Abertura da API do WhatsApp 
+        <script type="text/javascript">
+              // Criando estrelas na div Sky
+              const numStars = 1050;                                        // Definido o numero de estrelas
+              for (let i = 0; i < numStars; i++) { generateRandomStar(); }  // Funcao de repeticao para gerar gerar estrelas até o numero definido
+              // Funcao que gera estrelas aleatoriamente no corpo da div
+              function generateRandomStar() {
+                  const star = document.createElement("div");
+                  star.classList.add("star");
+                  star.style.left = `${Math.random() * 100}%`;
+                  star.style.top = `${Math.random() * 100}%`;
+                  document.body.appendChild(star);
+              }
         </script>
     </body>
 </html>
