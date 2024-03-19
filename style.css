@@ -1,20 +1,15 @@
-/* Abertura: Configuracao geral da pagina*/
+/*Configuracao geral da pagina*/
 html, body{
     height: 100%; width: 100%;
     margin: 0; padding: 0;
+    background: transparent linear-gradient(170deg, #01af84 35%, black 100%) 0% 0% no-repeat padding-box;
 }
 body{
     margin: 0; padding: 0;
     background-color: black; color: white;
-    background: transparent linear-gradient(170deg, #01af84 45%, rgb(0, 0, 0) 100%) 0% 0% no-repeat padding-box;
 }
-::selection{
-    background-color: rgb(223, 0, 223);
-    color: rgb(0, 0, 0);
-}
-/* Fechamento: Configuracao geral da pagina*/
 
-/*Abertura: Céu estrelado*/
+/*Céu estrelado*/
 .sky {
     position: absolute;
     top: 0; left: 0;
@@ -24,18 +19,26 @@ body{
 .star {
     position: absolute;
     width: 2px; height: 2px;
-    background-color: white;                   /* Cor das estrelas                     */
+    background-color: white;                   /* Cor das estrelas */
     border-radius: 50%;
-    pointer-events: none;                        /* Evita que as estrelas sejam clicáveis */
-    animation: twinkling 3s infinite alternate;  /* Adiciona a animação                   */
+    pointer-events: none; /* Evita que as estrelas sejam clicáveis */
+    animation: twinkling 3s infinite alternate; /* Adiciona a animação */
 }
 @keyframes twinkling {
-    0% { opacity: 1; }                           /* Estrela totalmente visível    */
-    100% { opacity: 0.6; }                       /* Estrela mais fraca (piscando) */
+    0% { opacity: 1; /* Estrela totalmente visível */ }
+    100% { opacity: 0.6; /* Estrela mais fraca (piscando) */ }
 }
-/*Fechamento: Céu estrelado*/
 
-/*Abertura: Barra de menu*/
+.message {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.message.reveal { opacity: 1; }
+
+/*Barra de menu*/
 header{ display: flex; }
 
 #menu{
@@ -63,4 +66,3 @@ header{ display: flex; }
     background-color: purple;
     border-radius: 15px;
 }
-/*Fechamento: Barra de menu*/
