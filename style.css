@@ -2,7 +2,7 @@
 html, body{
     height: 100%; width: 100%;
     margin: 0; padding: 0;
-    background: transparent linear-gradient(170deg, #01af84 35%, black 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(170deg, black 70%, green 100%) 0% 0% no-repeat padding-box;
 }
 body{
     margin: 0; padding: 0;
@@ -44,7 +44,7 @@ header{ display: flex; }
 
 #menu{
     display: flex;
-    background: transparent linear-gradient(180deg, #9201af9c 0%, transparent 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, green 0%, transparent 100%) 0% 0% no-repeat padding-box;
     margin: 0%; padding: 0%;
     width: 100%;
     align-items: center; justify-content: center; text-align: center;
@@ -66,4 +66,8 @@ header{ display: flex; }
 #menu li:hover {
     background-color: purple;
     border-radius: 15px;
+}
+
+#block1{
+  background-color: green; margin: 5%; padding: 2%; border-radius: 15px; color: yellow; font-family: inherit;
 }
