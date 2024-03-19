@@ -11,7 +11,7 @@
         <div class="sky"></div><!--Local onde é geradas as estrelas-->
         <header>
             <ul id="menu"> <!--Menu principal da pagina, contendo funcoes principais-->
-                <li onclick="goToHome()">Home</li>
+                <li id="home" onclick="goToHome()">Home</li>
                 <li onclick="openContact()">Contact</li>
                 <li>Projects</li>
             </ul>
@@ -24,18 +24,5 @@
             my bride and coffee.
         </p>
         </div>
-        <script type="text/javascript">
-          // Criando estrelas na div Sky
-          const numStars = 1050;                                        // Definido o numero de estrelas
-          for (let i = 0; i < numStars; i++) { generateRandomStar(); }  // Funcao de repeticao para gerar gerar estrelas até o numero definido
-          // Funcao que gera estrelas aleatoriamente no corpo da div
-          function generateRandomStar() {
-              const star = document.createElement("div");
-              star.classList.add("star");
-              star.style.left = `${Math.random() * 100}%`;
-              star.style.top = `${Math.random() * 100}%`;
-              document.body.appendChild(star);
-          }
-        </script>
     </body>
 </html>
