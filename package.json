@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.19.0",
+    "repl": "^0.1.3"
+  }
+}
