@@ -2,52 +2,27 @@
 html, body{
     height: 100%; width: 100%;
     margin: 0; padding: 0;
-    background: transparent linear-gradient(170deg, black 70%, green 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(170deg, black 80%, darkred 100%) 0% 0% no-repeat padding-box;
+}
+
+::selection{
+  background-color: white; color: black;
 }
 body{
-    margin: 0; padding: 0;
     background-color: black; color: white;
     font-family: monospace;
 }
 
-/*Céu estrelado*/
-.sky {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100vh;
-    z-index: -1;
-}
-.star {
-    position: absolute;
-    width: 2px; height: 2px;
-    background-color: white;                   /* Cor das estrelas */
-    border-radius: 50%;
-    pointer-events: none; /* Evita que as estrelas sejam clicáveis */
-    animation: twinkling 3s infinite alternate; /* Adiciona a animação */
-}
-@keyframes twinkling {
-    0% { opacity: 1; /* Estrela totalmente visível */ }
-    100% { opacity: 0.6; /* Estrela mais fraca (piscando) */ }
-}
-
-.message {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-.message.reveal { opacity: 1; }
-
 /*Barra de menu*/
 header{ display: flex; }
 
+#logo1 { border-radius: 50px; margin-left: 10%; margin-top: 10%;}
+#name{ margin-left: 2%;}
 #menu{
     display: flex;
-    background: transparent linear-gradient(180deg, green 0%, transparent 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, darkred 0%, transparent 100%) 0% 0% no-repeat padding-box;
     margin: 0%; padding: 0%;
     width: 100%;
-    align-items: center; justify-content: center; text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -69,5 +44,59 @@ header{ display: flex; }
 }
 
 #block1{
-  background-color: green; margin: 5%; padding: 2%; border-radius: 15px; color: yellow; font-family: inherit;
+  background: transparent linear-gradient(170deg, red 0%, transparent 70%) 0% 0% no-repeat padding-box;
+  margin: 5%; padding: 2%; border-radius: 15px; color: white; font-family: inherit;
+}
+
+.bloco2 {
+  text-align: center;
+  border-radius: 5px;
+  background: transparent linear-gradient(170deg, black 50%, red 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  height: 28px;
+  width: 100px;
+  display: inline; padding: 0.5%;
+}
+
+.bloco2 ul li{ list-style: none; }
+
+#ptools:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black;
+}
+#liblib:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black;
+}
+#ardp1:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black;
+}
+#database:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black;
+}
+#rpg:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black;
+}
+.lista_conta{ display: inline; cursor: pointer;}
+.conta{display: inline; list-style: none;}
+
+@media screen (max-width: 600px;){
+  #block1{ background: transparent linear-gradient(180deg, red 0%, transparent 100%) 0% 0% no-repeat padding-box;
+            margin: 5%; padding: 2%; border-radius: 15px; color: white; font-family: inherit; }
 }

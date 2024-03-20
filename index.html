@@ -5,24 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="scripts/script.js"></script>
     </head>
     <body>
-        <div class="sky"></div><!--Local onde é geradas as estrelas-->
         <header>
-            <ul id="menu"> <!--Menu principal da pagina, contendo funcoes principais-->
-                <li id="home" onclick="goToHome()">Home</li>
-                <li onclick="openContact()">Contact</li>
-                <li>Projects</li>
-            </ul>
+          <ul id="menu"> <!--Menu principal da pagina, contendo funcoes principais-->
+            <div id="imagem">
+              <img id="logo1" src="assets/iconaba.jpg" width="90" height="90">
+            </div>
+            <h3 id="name">Mr. White Dragon</h3>
+          </ul>
         </header>
-        <div class="" id="block1" align="center">
+        <div id="block1" align="center">
           <h2>Hello! I'm Mr.White (or Mr.White Dragon if you prefer)!</h2>
           <p>
             I'm the studant of the software enginee, i have a bride and i like to teach she matters of the cyber security and too much matters
             of the Technologies. I no very like's of the peoples, but make what i can for not apparence a grumpy and bad-tempered. But i prefer something
-            my bride and coffee.
-        </p>
+            my bride and coffee.<br>
+            I'm facinity for technology, mainly for Artificial Intelligence, to see my projects, below are the options.
+          </p>
+          <ul>
+            <li class="bloco2" id="ptools" onclick="goToPentestTools()">Pentest Tools</li>
+            <li class="bloco2" id="liblib" onclick="goToLibrary()">Library</li>
+            <li class="bloco2" id="ardp1" onclick="goToArduinoP1()">Arduino P1</li>
+          </ul>
+          <div id="block2" align="center">
+            <h2 id="contati">Contacts</h2>
+            <p>These contacts are only for professional questions and collaboration on projects.</p>
+            <ul class="lista_conta">
+              <li class="conta" onclick="openContact()"><img loading="lazy" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=279c87&color=black"></li>
+              <li class="conta" onclick="openGMAIL()"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=red&color=black" target="_blank"></li>
+              <li class="conta" onclick="openGITHUB()"><img loading="lazy" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></li>
+            </ul>
+          </div>
         </div>
     </body>
 </html>
