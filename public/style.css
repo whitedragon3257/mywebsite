@@ -61,42 +61,43 @@ header{ display: flex; }
   display: inline; padding: 0.5%;
 }
 
-.bloco2 ul li{ list-style: none; }
+.bloco2 ul li{ list-style: none; cursor: pointer; }
 
 #ptools:hover{
   background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
   color: black;
   transition: 0.1s;
-  border: solid black;
+  border: solid black; cursor: pointer; 
 }
 #liblib:hover{
   background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
   color: black;
   transition: 0.1s;
-  border: solid black;
+  border: solid black; cursor: pointer; 
 }
 #ardp1:hover{
   background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
   color: black;
   transition: 0.1s;
-  border: solid black;
+  border: solid black; cursor: pointer; 
 }
 #database:hover{
   background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
   color: black;
   transition: 0.1s;
-  border: solid black;
+  border: solid black; cursor: pointer; 
 }
 #rpg:hover{
   background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
   color: black;
   transition: 0.1s;
-  border: solid black;
+  border: solid black; cursor: pointer; 
+}
+#magic:hover{
+  background: transparent linear-gradient(170deg, red 50%, black 100%) 0% 0% no-repeat padding-box;
+  color: black;
+  transition: 0.1s;
+  border: solid black; cursor: pointer; 
 }
 .lista_conta{ display: inline; cursor: pointer;}
 .conta{display: inline; list-style: none;}
-
-@media screen (max-width: 600px;){
-  #block1{ background: transparent linear-gradient(180deg, red 0%, transparent 100%) 0% 0% no-repeat padding-box;
-            margin: 5%; padding: 2%; border-radius: 15px; color: white; font-family: inherit; }
-}
